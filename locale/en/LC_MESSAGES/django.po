@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-06 19:28+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\guest_main\templates\guest_main\main.html:24
+#: .\guest_main\templates\layout.html:27 .\guest_main\templates\layout.html:55
+msgid "О проекте"
+msgstr "About project"
+
+#: .\guest_main\templates\guest_main\main.html:50
+msgid "Наши партнёры"
+msgstr "Our partners"
+
+#: .\guest_main\templates\layout.html:28 .\guest_main\templates\layout.html:56
+msgid "Партнёры"
+msgstr "Partners"
+
+#: .\guest_main\templates\layout.html:29 .\guest_main\templates\layout.html:57
+msgid "Контакты"
+msgstr "Contacts"
+
+#: .\guest_main\templates\layout.html:48 .\guest_main\templates\layout.html:90
+msgid "Карта гостя"
+msgstr "Guest Card"
+
+#: .\guest_main\templates\main.html:86
+msgid "Посетить сайт"
+msgstr "Visit website"
+
+#: .\guest_main\templates\layout.html:95
+msgid "Официальный поставщик услуг: OOO "
+msgstr "Official service provider: LLC"
+
+#: .\guest_main\templates\layout.html:96
+msgid "Ташкентская область, посёлок Тузель, махалля Гульзар,"
+msgstr "Tashkent region, Tuzel village, Gulzar mahalla,"
+
+#: .\guest_main\templates\layout.html:97
+msgid "7-ой проезд улицы Мурувват, дом 11"
+msgstr "7th passage of Muruvvat street, house 11"
+
+#: .\guest_main\templates\layout.html:99
+msgid "Услуги лицензированы"
+msgstr "Services licensed"
+
+#: .\guest_main\templates\layout.html:103
+msgid "Обратная связь"
+msgstr "Feedback"
+
+#: .\guest_main\templates\layout.html:144
+msgid "Дизайн и разработка сайта: "
+msgstr "Website design and development:"
+
+#: .\guest_main\templates\layout.html:145
+msgid "Июль-август 2022 год"
+msgstr "July-August 2022"

@@ -1,0 +1,208 @@
+@media(max-width: 576px) {
+    /* header */
+    .header_burger {
+        display: block !important;
+    }
+    .header_burger_open {
+        font-size: 25px;
+    }
+    .header_burger_menu {
+        left: -40vw;
+        width: 40vw;
+        padding: 12px;
+    }
+    .header_burger_menu a {
+        font-size: 15px !important;
+    }
+    .header_logo {
+        margin: 5px 0;
+        width: 40%;
+    }
+    .header_logo img {
+        height: 25px;
+    }
+    .header_logo-text {
+        font-family: var(--logo_font);
+    }
+    .header_logo-text h1 {
+        font-size: 13px;
+    }
+    .header_logo-text p {
+        font-size: 9px;
+        margin: 0;
+        padding: 0;
+    }
+    .header_logo-text p span {
+        text-transform: uppercase;
+    }
+    .small {
+        display: block !important;
+    }
+    .header_navigation {
+        display: none !important;
+    }
+    /* main */
+    /* about_project */
+    .about_project {
+        margin: 0;
+        justify-content: center !important;
+    }
+    .about_project-image {
+        margin-top: 20px;
+        width: 50%;
+    }
+    .about_project-info {
+        margin-top: 20px;
+        width: 80%;
+        align-items: center !important;
+    }
+    .about_project-title {
+        font-size: 15px;
+        text-align: center;
+    }
+    .about_project-text {
+        font-size: 11px;
+        margin-top: 15px !important;
+    }
+    .about_us-statistics {
+        margin-top: 20px;
+        padding: 17px 0;
+        background: var(--second_color);
+    }
+    .about_us-statistics i {
+        font-size: 40px;
+    }
+    .about_us-statistics h1 {
+        font-size: 30px;
+    }
+    .about_us-statistics p {
+        font-size: 20px;
+    }
+    /* our_companions */
+    .our_companions {
+        margin-top: 30px;
+    }
+    .our_companions-title {
+        font-size: 20px;
+    }
+    .our_companions-buttons {
+        /* width: 20%; */
+        margin-top: 5px;
+    }
+    .our_companions-buttons p {
+        font-size: 16px;
+    }
+    /* Our_companion_slider */
+    .carousel {
+        margin-top: 15px;
+    }
+    .slide {
+        flex-direction: column;
+    }
+    .slide_info {
+        width: 100%;
+    }
+    .slide_info-name {
+        /* height: 20px !important; */
+        align-items: center !important;
+        height: 60px !important;
+    }
+    .slide_info-title {
+        height: 100%;
+        display: flex;
+    }
+    .slide_info-title,
+    .slide_info-status p {
+        font-size: 15px;
+    }
+    .slide_info-status {
+        width: calc(100%*6/12);
+    }
+    .slide_info-status p {
+        margin: 0;
+    }
+    .slide_info-star {
+        width: calc(100%*9/12);
+    }
+    .slide_info-star i {
+        font-size: 15px;
+    }
+    .none-color {
+        color: transparent !important;
+    }
+    .slide_info-text {
+        margin-top: 15px !important;
+        height: 240px;
+        font-size: 13px;
+    }
+    .slide_info-button {
+        margin-top: 10px;
+        width: 100%;
+        color: var(--font_color);
+    }
+    .slide_info-href {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+    .slide_info-image {
+        width: 60%;
+    }
+    /* FOOTER */
+    footer {
+        margin-top: 20px;
+        padding: 10px 0 5px 0;
+    }
+    .footer-left {
+        width: 90%;
+        align-items: center !important;
+    }
+    .footer_logo {
+        margin: 5px 0;
+        width: 45%;
+    }
+    .footer_logo img {
+        height: 40px;
+    }
+    .footer_logo-text h1 {
+        font-size: 22px;
+    }
+    .footer_logo-text p {
+        font-size: 11px;
+    }
+    .footer_address-info {
+        margin-top: 25px;
+        height: 150px;
+    }
+    .footer_address-info p {
+        font-size: 16px;
+    }
+    .footer-right {
+        height: 180px;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center !important;
+    }
+    .footer-right h3,
+    .footer-right a i,
+    .footer-social i {
+        font-size: 20px;
+        text-align: center !important;
+    }
+    .footer-right a p {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .footer_contact-info {
+        height: 130px;
+        align-items: center !important;
+    }
+    .footer_contact-info a {
+        justify-content: center !important;
+    }
+    .bottom {
+        margin-top: 30px;
+    }
+    .bottom p {
+        font-size: 10px;
+    }
+}

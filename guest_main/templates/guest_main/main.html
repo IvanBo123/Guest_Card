@@ -1,0 +1,110 @@
+{% extends 'layout.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %}
+{{ computers.name }}
+{% endblock title %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'guest_main\styles\style.css' %}">
+<link rel="stylesheet" href="{% static 'guest_main\styles\mediaLg.css' %}">
+<link rel="stylesheet" href="{% static 'guest_main\styles\mediaMd.css' %}">
+<link rel="stylesheet" href="{% static 'guest_main\styles\mediaSm.css' %}">
+<link rel="stylesheet" href="{% static 'guest_main\styles\mediaXl.css' %}">
+<link rel="stylesheet" href="{% static 'guest_main\styles\mediaXs.css' %}"> {% endblock link %} {% block main %}
+<main>
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            {% for el in about_us %}
+            <div id='about_project'
+                 class="about_project d-flex flex-wrap justify-content-between justify-content-sm-center justify-content-lg-between align-items-center col-11">
+                <div class="about_project-image d-flex justify-content-center align-items-center col-3 col-sm-6 col-lg-3">
+                    <img src="{{ el.image.url }}" alt="" class="">
+                </div>
+                <div class="about_project-info d-flex flex-column align-items-end align-items-sm-center align-items-lg-end col-8 col-sm-11 col-lg-8">
+                    <h2 class="about_project-title">{% trans 'О проекте' %}</h2>
+                    <p class="about_project-text d-block">{{ el.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="about_us-statistics">
+        <div class="container-fluid">
+            <div class="about_us-blocks d-flex justify-content-around align-items-center col-12">
+                {% for el in statistic %}
+                <div class="about_us-statistic rborder d-flex flex-column justify-content-between align-items-center col-4">
+                    <i class="{{ el.href }}"></i>
+                    <div class="d-flex justify-content-between"> {% if not el.cent == None %}
+                        <h1 class="text-center">{{ el.cent }}</h1>
+                        {% endif %}
+                        <h1 tag="{{ el.value }}" class="achievement text-center"></h1>
+                    </div>
+                    <p class="text-center">{{ el.name }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="conainer-fluid">
+        <div id='our_companions' class="our_companions d-flex flex-column align-items-center">
+            <h2 class="our_companions-title">{% trans 'Наши партнёры' %}</h2>
+            <nav class="our_companions-navigation d-flex justify-content-center">
+                <ul class="our_companions-ul d-flex justify-content-between align-items-center col-11 col-sm-10 col-md-11 col-xl-11">
+                    {% for el in types %}
+                    <li class="d-flex text-center justify-content-center align-items-center">
+                        <button pk="{{el.tag}}" class="our_companions-buttons">
+                            <p>{{ el.types }}</p>
+                        </button>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        <div id="carouselExampleCaptions" class="our_companions-slider carousel slide carousel-fade"
+             data-bs-ride="carousel">
+            <div class="d-flex justify-content-center ">
+                <div class="carousel-inner">
+                    {% for el in companions %}
+                    <div name="{{ el.type_of.tag }}" data-bs-interval="3000" class="carousel-item">
+                        <div class="slide d-flex flex-wrap justify-content-between justify-content-sm-center justify-content-lg-between align-items-center">
+                            <div class="slide_info d-flex flex-column align-items-start col-7 col-sm-12 col-md-11 col-lg-7">
+                                <div class="slide_info-name d-flex justify-content-between align-items-center">
+                                    <h1 class="slide_info-title">{{ el.name }}</h1>
+                                    {% if not el.status == None %}
+                                    <div class="slide_info-status d-flex justify-content-between align-items-center">
+                                        <div class="slide_info-star d-flex justify-content-between align-items-center">
+                                            {% for i in range %}
+                                            <i class="las la-star {% if i > el.status %}none-color{% endif %}"></i>
+                                            {% endfor %}
+                                        </div>
+                                        <p>{{ el.status }}</p>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                <p class="slide_info-text d-block">{{ el.description }}</p>
+                                <div class="slide_info-button d-flex justify-content-end">
+                                    <a href="{{ el.href }}" class="slide_info-href">{% trans 'Посетить сайт' %}</a>
+                                </div>
+                            </div>
+                            <div class="slide_info-image d-flex justify-content-center align-items-center col-4 col-sm-6 col-lg-4">
+                                <img src="{{ el.image.url }}" alt="" class="">
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                <i class="las la-angle-left"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                <i class="las la-angle-right"></i>
+            </button>
+        </div>
+    </div>
+</main>
+{% endblock main %} {% block scripts %}
+<script src="{% static 'guest_main/js/script.js' %}"></script>
+{% endblock scripts %}

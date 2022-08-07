@@ -32,7 +32,7 @@ msgstr "Hamkorlar"
 
 #: .\guest_main\templates\layout.html:29 .\guest_main\templates\layout.html:57
 msgid "Контакты"
-msgstr ""
+msgstr "Kontaktlar"
 
 #: .\guest_main\templates\layout.html:48 .\guest_main\templates\layout.html:90
 msgid "Карта гостя"

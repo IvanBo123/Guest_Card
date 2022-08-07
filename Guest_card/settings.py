@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1blny&dsuz*sgfqfl_zw9r3@d&3kyc19jdya1x1))l(89#g+i5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mri1998.pythonanywhere.com/',]
 
 # Application definition
 
@@ -130,15 +130,11 @@ LOCALE_PATHS = (
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-MEDIA_URL = "media/"
-MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_URL = "/media/"
+MEDIA_ROOT = "/home/MrI1998/Guest_Card/media/"
 
-STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / "static"
-
-STATICFILES_DIRS = [
-    BASE_DIR / "guest_main/static/",
-]
+STATIC_URL = '/static/'
+STATIC_ROOT = "/home/MrI1998/Guest_Card/Guest_card/static/"
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
